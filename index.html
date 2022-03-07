@@ -4,10 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practicas JavaScript</title>
-    <script src="js/curso.js"></script>
+    <title>Proyecto final pt.1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="curso.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!--*****************Contenedor NavBar*****************-->
+    <nav class="navbar">
+        <p><a href="#inicio">Go up!</a></p>
+        <p>My list.</p>
+        <p>Contact us.</p>
+        <p><a href="#precios">Our prices.</a></p>
+    </nav>    
+    <!--*****************Contenedor Primera Pagina*****************-->
+    <div id="inicio" class="contenedor"> 
+        <h1 class="titulo_inicio">Welcome</h1>
+            <h2 class="sub_texto">Tu nuevo sitio para ver peliculas <br> desde tu casa.</h2>
+            <button type="button" class="boton_inicio">Go!</button>
+    </div> 
+    <hr>
+    <!--*****************Segunda Pagina************************************-->
+    <div> 
+        <p>Inicio de la segunda parte (En cosntrucción).</p>
+        <br>
+        <!--Como hacer para que el boton de inicio me lleve a esta parte?-->
+        <p>(Acá va la imagen de una pelicula.)</p>
+        <button onclick="miLista('Pelicula random')" >+ Mi lista.</button> <br>
+        <br>
+        <p>(Acá va la imagen de otra película.)</p>
+        <button onclick="miLista('Pelicula random2')" >+ Mi lista.</button>
+        <br> 
+        <br>
+    </div>
+    <!--*****************Tercera pagina*****************-->
+    <hr>
+    <div>
+        <h2 id="precios">¿Para cuantas pantallas desea comprar nuestro servicio? (Max. 6)</h2>
+        <a href="#" onclick="pantallas()" >Ingresar pantallas.</a>
+        <br>
+        <br>
+    </div>
+
 </body>
 </html>

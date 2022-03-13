@@ -75,6 +75,11 @@ nav a{
 
 }
 
+button {
+    margin-left: 15px;
+    display: inline;
+}
+
 /*Todo*/
 *{
     margin: 0px;

@@ -9,11 +9,59 @@ let edad = prompt('Ingrese su edad: ');
 /******************************************************************************/ 
 /***********************Funcion para agragar a Mi lista************************/
 /******************************************************************************/ 
-function miLista(pelicula){
+
+const arrayMiLista = [];
+
+function verLista() {
+
+    console.log(arrayMiLista);
+}
+
+
+function agregarAMiLista(pelicula){
 
     console.log("Agregaste " + pelicula + " a tú lista.");
     alert("Agregaste " + pelicula + " a tú lista");
+    arrayMiLista.push(pelicula);
 }
+
+/*Eliminar pelicula de mi lista.*/ 
+
+function eliminarDeMiListaRandom1(){  /*Eliminar pelicula random 1 */
+
+    indicePelicula = arrayMiLista.indexOf("Pelicula random");
+    arrayMiLista.splice(indicePelicula,1);
+    console.log("Pelicula random se eliminó de tu lista.");
+}
+
+function eliminarDeMiListaRandom2(){ /*Eliminar pelicula random 2 */
+
+    indicePelicula = arrayMiLista.indexOf("Pelicula random2");
+    arrayMiLista.splice(indicePelicula,1);
+    console.log("Pelicula random2 se eliminó de tu lista.");
+}
+
+function eliminarDeMiListaRandom3(){ /*Eliminar pelicula random 3 */
+
+    indicePelicula = arrayMiLista.indexOf("Pelicula random3");
+    arrayMiLista.splice(indicePelicula,1);
+    console.log("Pelicula random3 se eliminó de tu lista.");
+}
+
+function eliminarDeMiListaRandom4(){ /*Eliminar pelicula random 4 */
+
+    indicePelicula = arrayMiLista.indexOf("Pelicula random4");
+    arrayMiLista.splice(indicePelicula,1);
+    console.log("Pelicula random4 se eliminó de tu lista.");
+}
+
+function eliminarDeMiListaRandom5(){ /*Eliminar pelicula random 5 */
+
+    indicePelicula = arrayMiLista.indexOf("Pelicula random5");
+    arrayMiLista.splice(indicePelicula,1);
+    console.log("Pelicula random5 se eliminó de tu lista.");
+}
+
 
 /******************************************************************************/ 
 /****************Funcion para calcular precio de pantallas*********************/
@@ -42,9 +90,9 @@ function top10(){
 
         this.Titulo = titulo;
         this.calificacion = Calificación;
-
+    
     }
-
+    
 
     const Pelicula1 = new Pelicula("One piece: Red.", "10/10");  //Armando las peliculas.
     array.push(Pelicula1);
@@ -99,6 +147,5 @@ function top10(){
     for (let i = 0; i < array.length; i++) {  //Mostrando el top 10 en la consola.
         console.log(array[i]);
     }
-
 
 }

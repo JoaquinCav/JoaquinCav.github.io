@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto final pt.1</title>
     <link rel="stylesheet" href="style.css">
-    <script src="curso.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <!--*****************Contenedor NavBar*****************-->
@@ -29,50 +29,107 @@
     <hr>
     <!--*****************Segunda Pagina************************************-->
     <div> 
-        <p>Inicio de la segunda parte (En cosntrucción).</p>
+        <p>Inicio de la segunda parte (En construcción).</p>
         <br>
-        <!--Como hacer para que el boton de inicio me lleve a esta parte?-->
-        <p>(Pelicula random 1)</p> 
-        <button onclick="agregarAMiLista('Pelicula random')" >+ Mi lista.</button>
-        <button onclick="eliminarDeMiListaRandom1()">- Eliminar de mi lista.</button>
+        <h2>Algunas de nuestras películas.</h2>
         <br>
-        <br>
-        <p>(Pelicula random 2)</p>
-        <button onclick="agregarAMiLista('Pelicula random2')" >+ Mi lista.</button>
-        <button onclick="eliminarDeMiListaRandom2()">- Eliminar de mi lista.</button>
-        <br> 
-        <br>
-        <p>(Pelicula random 3)</p>
-        <button onclick="agregarAMiLista('Pelicula random3')" >+ Mi lista.</button>
-        <button onclick="eliminarDeMiListaRandom3()">- Eliminar de mi lista.</button>
-        <br>
-        <br>
-        <p>(Pelicula random 4)</p>
-        <button onclick="agregarAMiLista('Pelicula random4')" >+ Mi lista.</button>
-        <button onclick="eliminarDeMiListaRandom4()">- Eliminar de mi lista.</button>
-        <br>
-        <br> 
-        <p>(Pelicula random 5)</p>
-        <button onclick="agregarAMiLista('Pelicula random5')" >+ Mi lista.</button>
-        <button onclick="eliminarDeMiListaRandom5()">- Eliminar de mi lista.</button>
+        <div id="galeriaPelis">
+            <div class="card-pelicula">
+                <div>
+                    <img src="imagenes/pelicula1.jpg" class="nuestras-pelis" ></img>
+                </div>
+                <div>    
+                    <button onclick="agregarAMiLista('El padrino')" >+ Mi lista.</button>
+                    <br>
+                    <button onclick="eliminarDeMiLista(`El padrino`)">- Eliminar de mi lista.</button>
+                </div>        
+            </div>    
+                    <br>
+                    <br>
+            <div class="card-pelicula">        
+                <div>    
+                    <img src="imagenes/imagen2.jpg" class="nuestras-pelis"></img>
+                </div>
+                <div>    
+                        <button onclick="agregarAMiLista(`Batman: El caballero oscuro`)">+ Mi lista.</button>
+                        <br>
+                        <button onclick="eliminarDeMiLista(`Batman: El caballero oscuro`)">- Eliminar de mi lista.</button> 
+                </div>    
+                    </div>        
+                    <br> 
+                    <br>
+            <div class="card-pelicula">      
+                <div>
+                    <img src="imagenes/pelicula3.jpg" class="nuestras-pelis"></img>
+                </div>        
+                <div>        
+                        <button onclick="agregarAMiLista('El señor de los anillos')" >+ Mi lista.</button>
+                        <br> 
+                        <button onclick="eliminarDeMiLista(`El señor de los anillos`)">- Eliminar de mi lista.</button>
+                </div>    
+            </div>    
+                        <br>
+                        <br>
+            <div class="card-pelicula">            
+                <div>    
+                    <img src="Imagenes/pelicula4.jpg" class="nuestras-pelis"></img>
+                </div>    
+                <div>        
+                        <button onclick="agregarAMiLista('La milla verda')" >+ Mi lista.</button>
+                        <br>
+                        <button onclick="eliminarDeMiLista('La milla verda')">- Eliminar de mi lista.</button>
+                </div>    
+            </div>
+                    <br>
+                    <br>
+            <div class="card-pelicula">         
+                <div>
+                    <img src="Imagenes/pelicula5.jpg" class="nuestras-pelis"></img>
+                </div>    
+                <div>    
+                    <button onclick="agregarAMiLista('Forrest gump')" >+ Mi lista.</button>
+                    <br>
+                    <button onclick="eliminarDeMiLista('Forrest gump')">- Eliminar de mi lista.</button>
+                </div>    
+            </div>
+        </div>
         <br> 
         <br> 
         <button onclick="verLista()">Ver mi lista.</button>
+        <br> 
         <br> 
     </div>
     <!--*****************Tercera pagina*****************-->
     <hr>
     <div>
         <h2 id="precios">Costo de nuestro servicio. (Max. 6 pantallas.)</h2>
-        <a href="#" onclick="pantallas()" >Mostrar precios.</a>
+        <br>
+        <button id="botonPantallas" onclick="pantallas()" >Mostrar precios.</button>
+            <div class="contenedorDePrecios">
+                
+            </div>
         <br>
         <br>
     </div>
     <!--*****************Ver top 10 con Array (entregable lunes 14/03)*****************-->
     <hr> <br>
 
-    <h2>Top 10 peliculas de la semana.</h2>
-    <a href="#" onclick="top10();" >Ver top 10.</a>
+    <h2>Top 10 peliculas.</h2>
+    <br>
+    <button id="botonTop10" onclick="top10();" >Ver top 10.</button>
+    <div id="contenedorTop10">
+        <ol class="listaOrdenada">
+            
+        </ol>
+        
+    </div>
 
+
+
+    <script src="top10.js" defer></script>
+    <script src="edadParaIngresar.js" defer></script>
+    <script src="agregarAMiLista.js" defer></script>
+    <script src="preciosPantallas.js" defer></script>
+    <script src="EliminarDeMiLista.js" defer ></script>
 </body>
 </html>

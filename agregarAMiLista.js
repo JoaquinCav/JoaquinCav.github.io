@@ -1,4 +1,5 @@
 const arrayMiLista = [];
+localStorage.setItem('miLista', arrayMiLista);
 
 function verLista() {
 

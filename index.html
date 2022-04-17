@@ -10,27 +10,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="botonesMiLista.css">
+    <link rel="stylesheet" href="BotonInicio.css">
+    <link src="listaDeseos.html">
+    <link src="contactUs.html">
 </head>
 <body>
     <!--*****************Contenedor NavBar*****************-->
     <nav class="navbar">
-        <p><a href="#inicio">Go up!</a></p>
-        <p>My list.</p>
-        <p>Contact us.</p>
-        <p><a href="#precios">Our prices.</a></p>
+        <p><a href="listaDeseos.html">My Wish list.</a></p>
+        <p><a  href="contactUs.html">Contact Us.</a></p>
+        <p><a  href="#precios">Our prices.</a></p>
     </nav>    
     <!--*****************Contenedor Primera Pagina*****************-->
     <div id="inicio" class="contenedor"> 
         <h1 class="titulo_inicio">Welcome</h1>
-            <h2 class="sub_texto">Tu nuevo sitio para ver peliculas <br> desde tu casa.</h2>
-            <button type="button" class="boton_inicio">Go!</button>
+            <h2 class="sub_texto">Your new site to watch movies <br> from home.</h2>
+            <button class="css-button-arrow--blue">Go!</button>
     </div> 
     
     <!--*****************Segunda Pagina************************************-->
     <div class="divContenedorCards"> 
         <br>
-        <h2 id="titulo2">Algunas de nuestras películas.</h2>
+        <h2 id="titulo2">Some of our movies.</h2>
         <br>
         <div id="galeriaPelis" >
             <div class="card-pelicula"> 
@@ -38,9 +40,9 @@
                     <img src="imagenes/pelicula1.jpg" class="nuestras-pelis" ></img>
                 </div>
                 <div class="botonClass">    
-                    <button class="pepe" onclick="agregarAMiLista('El padrino')" >+ Mi lista.</button>
+                    <button class="pepe btn-agr1" onclick="agregarAMiListaPeli1('El padrino')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe" onclick="eliminarDeMiLista(`El padrino`)">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim1" onclick="eliminarDeMiLista1(`El padrino`)">- Eliminar de mi lista.</button>
                 </div>        
             </div>    
                     
@@ -49,9 +51,9 @@
                     <img src="imagenes/imagen2.jpg" class="nuestras-pelis"></img>
                 </div>
                 <div class="botonClass">    
-                        <button class="pepe" onclick="agregarAMiLista(`Batman: El caballero oscuro`)">+ Mi lista.</button>
+                        <button class="pepe btn-agr2" onclick="agregarAMiListaPeli2(`Batman: El caballero oscuro`)">+Add to Wish list.</button>
                         <br>
-                        <button class="pepe" onclick="eliminarDeMiLista(`Batman: El caballero oscuro`)">- Eliminar de mi lista.</button> 
+                        <button class="pepe btn-elim2" onclick="eliminarDeMiLista2(`Batman: El caballero oscuro`)">- Eliminar de mi lista.</button> 
                 </div>    
                     </div>        
                     
@@ -60,9 +62,9 @@
                     <img src="imagenes/pelicula3.jpg" class="nuestras-pelis"></img>
                 </div>        
                 <div class="botonClass">        
-                        <button class="pepe" onclick="agregarAMiLista('El señor de los anillos')" >+ Mi lista.</button>
+                        <button class="pepe btn-agr3" onclick="agregarAMiListaPeli3('El señor de los anillos')" >+Add to Wish list.</button>
                         <br> 
-                        <button class="pepe" onclick="eliminarDeMiLista(`El señor de los anillos`)">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim3" onclick="eliminarDeMiLista3(`El señor de los anillos`)">- Eliminar de mi lista.</button>
                 </div>    
             </div>    
 
@@ -71,9 +73,9 @@
                     <img src="Imagenes/pelicula4.jpg" class="nuestras-pelis"></img>
                 </div>    
                 <div class="botonClass">        
-                        <button class="pepe" onclick="agregarAMiLista('La milla verda')" >+ Mi lista.</button>
+                        <button class="pepe btn-agr4" onclick="agregarAMiListaPeli4('La milla verda')" >+Add to Wish list.</button>
                         <br>
-                        <button class="pepe" onclick="eliminarDeMiLista('La milla verda')">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim4" onclick="eliminarDeMiLista4('La milla verda')">- Eliminar de mi lista.</button>
                 </div>    
             </div>
             <div class="card-pelicula">         
@@ -81,62 +83,62 @@
                     <img src="Imagenes/pelicula5.jpg" class="nuestras-pelis"></img>
                 </div>    
                 <div class="botonClass">    
-                    <button class="pepe" onclick="agregarAMiLista('Forrest gump')" >+ Mi lista.</button>
+                    <button class="pepe btn-agr5" onclick="agregarAMiListaPeli5('Forrest gump')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe" onclick="eliminarDeMiLista('Forrest gump')">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim5" onclick="eliminarDeMiLista5('Forrest gump')">- Eliminar de mi lista.</button>
                 </div>    
             </div>
             <div class="card-pelicula"> 
                 <div>
-                    <img src="imagenes/pelicula1.jpg" class="nuestras-pelis" ></img>
+                    <img src="imagenes/imagen6.jpg" class="nuestras-pelis" ></img>
                 </div>
                 <div class="botonClass">    
-                    <button class="pepe" onclick="agregarAMiLista('El padrino')" >+ Mi lista.</button>
+                    <button class="pepe btn-agr6" onclick="agregarAMiListaPeli6('Conan: El Barbaro')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe" onclick="eliminarDeMiLista(`El padrino`)">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim6" onclick="eliminarDeMiLista6(`Conan: El Barbaro`)">- Eliminar de mi lista.</button>
                 </div>        
             </div>    
                     
             <div class="card-pelicula">        
                 <div >    
-                    <img src="imagenes/imagen2.jpg" class="nuestras-pelis"></img>
+                    <img src="imagenes/iimagen7.jpg" class="nuestras-pelis"></img>
                 </div>
                 <div class="botonClass">    
-                        <button class="pepe" onclick="agregarAMiLista(`Batman: El caballero oscuro`)">+ Mi lista.</button>
+                        <button class="pepe btn-agr7" onclick="agregarAMiListaPeli7(`Revancha`)">+Add to Wish list.</button>
                         <br>
-                        <button class="pepe" onclick="eliminarDeMiLista(`Batman: El caballero oscuro`)">- Eliminar de mi lista.</button> 
+                        <button class="pepe btn-elim7" onclick="eliminarDeMiLista7(`Revancha`)">- Eliminar de mi lista.</button> 
                 </div>    
                     </div>        
                     
             <div class="card-pelicula">      
                 <div>
-                    <img src="imagenes/pelicula3.jpg" class="nuestras-pelis"></img>
+                    <img src="imagenes/imagen8.jpg" class="nuestras-pelis"></img>
                 </div>        
                 <div class="botonClass">        
-                        <button class="pepe" onclick="agregarAMiLista('El señor de los anillos')" >+ Mi lista.</button>
+                        <button class="pepe btn-agr8" onclick="agregarAMiListaPeli8('Scre4m')" >+Add to Wish list.</button>
                         <br> 
-                        <button class="pepe" onclick="eliminarDeMiLista(`El señor de los anillos`)">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim8" onclick="eliminarDeMiLista8(`Scre4m`)">- Eliminar de mi lista.</button>
                 </div>    
             </div>    
 
             <div class="card-pelicula">            
                 <div>    
-                    <img src="Imagenes/pelicula4.jpg" class="nuestras-pelis"></img>
+                    <img src="Imagenes/imagen9.jpg" class="nuestras-pelis"></img>
                 </div>    
                 <div class="botonClass">        
-                        <button class="pepe" onclick="agregarAMiLista('La milla verda')" >+ Mi lista.</button>
+                        <button class="pepe btn-agr9" onclick="agregarAMiListaPeli9('Spider-man: No way home')" >+Add to Wish list.</button>
                         <br>
-                        <button class="pepe" onclick="eliminarDeMiLista('La milla verda')">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim9" onclick="eliminarDeMiLista9('Spider-man: No way home')">- Eliminar de mi lista.</button>
                 </div>    
             </div>
             <div class="card-pelicula">         
                 <div>
-                    <img src="Imagenes/pelicula5.jpg" class="nuestras-pelis"></img>
+                    <img src="Imagenes/imagen10.jpg" class="nuestras-pelis"></img>
                 </div>    
                 <div class="botonClass">    
-                    <button class="pepe" onclick="agregarAMiLista('Forrest gump')" >+ Mi lista.</button>
+                    <button class="pepe btn-agr10" onclick="agregarAMiListaPeli10('Sonic 2')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe" onclick="eliminarDeMiLista('Forrest gump')">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim10" onclick="eliminarDeMiLista10('Sonic 2')">- Eliminar de mi lista.</button>
                 </div>    
             </div>
         </div>
@@ -145,38 +147,126 @@
         <button id="botonMiLista" onclick="verLista()">Ver mi lista.</button>
         <br> 
         <br> 
-    </div>
+    
     <!--*****************Tercera pagina*****************-->
-    <hr>
+    
     <div>
-        <h2 id="precios">Costo de nuestro servicio. (Max. 6 pantallas.)</h2>
+        <div class="contenedorDePrecios">
+        <h2 id="precios"><span id="tituloCostos">Cost of our service. (Max. 6 screens.)</span></h2>
         <br>
         <button id="botonPantallas" onclick="pantallas()" >Mostrar precios.</button>
-            <div class="contenedorDePrecios">
+            
                 
             </div>
         <br>
         <br>
-    </div>
-    <!--*****************Ver top 10 con Array (entregable lunes 14/03)*****************-->
-    <hr> <br>
-
-    <h2>Top 10 peliculas.</h2>
+    
+    <!--*****************Ver top 10*****************-->
+    
+    <div class="contTop10">
+    <h2>Coming Soon!</h2>
+    <h4>(Click to watch trailer!)</h4>
     <br>
-    <button id="botonTop10" onclick="top10();" >Ver top 10.</button>
+    <button id="botonTop10" onclick="top10();" >Take a look!</button>
     <div id="contenedorTop10">
         <ol class="listaOrdenada">
             
+        <div class="listaImagenes">   <!--Puesto 1-->
+            <li id="peli1"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top1.jpg"/> 
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=0euQ6Dteids"><button class="btn-cSoon">View trailer here!</button></a>
+        </div>
+        
+        <div class="listaImagenes">   <!--Puesto 2-->
+            <li id="peli2"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top2.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=IO6kAXUvlOw"><button class="btn-cSoon">View trailer here!</button></a>
+        </div>
+            
+            <div class="listaImagenes">  <!--Puesto 3-->
+            <li id="peli3"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top3.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=ODbqWng2yFU"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+            
+            <div class="listaImagenes">  <!--Puesto 4-->
+            <li id="peli4"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top4.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=XOosUtGZo1Q"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+            
+            <div class="listaImagenes">  <!--Puesto 5-->
+            <li id="peli5"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top5.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=oV4EPoH23BY"><button class="btn-cSoon">View trailer here!</button></a> 
+            </div>
+            
+            <div class="listaImagenes">  <!--Puesto 6-->
+            <li id="peli6"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top6.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-AwLMRgcEoA"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+        
+            <div class="listaImagenes">  <!--Puesto 7-->
+            <li id="peli7"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top7.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=05bJF54X5-0"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+            
+            <div class="listaImagenes">  <!--Puesto 8-->
+            <li id="peli8"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top8.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=YD5BeUWgsSM"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+            
+            <div class="listaImagenes">  <!--Puesto 9-->
+            <li id="peli9"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top9.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=PaAvUOXUohk"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+            
+            <div class="listaImagenes">  <!--Puesto 10-->
+            <li id="peli10"></li>
+            <br>
+            <img class="imgPeli" src="Imagenes/top10.jpg"/>
+            <br>
+            <a target="_blank" href="https://www.youtube.com/watch?v=-fR6GHlxBA8"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
         </ol>
         
     </div>
+    </div>
+</div>
+<br>
+<div>
+    <button id="btn-subir" onclick="scrollToTop();" >(Icono flecha para arriba)</button>
+</div>
+</div>
 
-
-
+    <script src="subir.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="top10.js" defer></script>
     <script src="edadParaIngresar.js" defer></script>
     <script src="agregarAMiLista.js" defer></script>
     <script src="preciosPantallas.js" defer></script>
     <script src="EliminarDeMiLista.js" defer ></script>
-</body>
+</body> 
 </html>

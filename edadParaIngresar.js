@@ -1,4 +1,4 @@
-swal({
+/* swal({
     
     title: "Ingrese su nombre: ", 
     content: "input",

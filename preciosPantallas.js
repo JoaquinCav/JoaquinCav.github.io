@@ -7,12 +7,12 @@ function pantallas(){
     const fragmento = document.createDocumentFragment();
     let x = 1;
     
-    for(var i = 1; i < 7; i++){
+    for(let i = 1; i < 7; i++){
         
         
         const precio = document.createElement("LI");
         
-        precio.innerHTML = JSON.stringify ("El precio para " +  x  + " pantalla/s es de: " + precioInicial);
+        precio.innerHTML = JSON.stringify ("El precio para " +  x  + " pantalla/s es de: $" + precioInicial + ".");
         x++;
         fragmento.appendChild(precio);
 

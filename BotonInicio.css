@@ -1,7 +1,8 @@
 .css-button-arrow--blue {
+    position: absolute;
     width: 130px;
     height: 50px;
-    margin-top: 50px;
+    margin-top: 450px;
     margin-left: 300px;
     min-width: 130px;
     height: 40px;

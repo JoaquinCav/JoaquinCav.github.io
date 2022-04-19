@@ -31,6 +31,7 @@ html {
     margin: 10px;
     padding: 10px;
     box-shadow: 1px 2px 15px 0 black;
+    border-radius: 10px;
     
 }
 
@@ -88,6 +89,19 @@ html {
 
 
 /*Barra nav*/
+.navbar-principal{
+    display: flex;
+    justify-content: space-around;
+    height: 55px;
+    background-color: hsl(244, 86%, 11%);
+    color: white;
+    font-size: 40px;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    z-index: 1;
+}
+
 .navbar{
     height: 55px;
     background-color: hsl(244, 86%, 11%);
@@ -164,11 +178,12 @@ span{
 
 /******Contenedor Top 10********/
 .listaOrdenada{
-    color: white;
+    color: black;
 }
 
 .contTop10{
-    margin-left: 75vh;
+    margin-left: 0;
+    
 }
 
 .cmagenes{
@@ -187,6 +202,7 @@ span{
 .btn-cSoon{
     margin-left: 50px;
     margin-top: 5px;
+    margin-bottom: 10px;
     color: white;
     background-color: #0d33af;
     border: solid 2px #000000;
@@ -196,22 +212,53 @@ span{
 
 .listaImagenes a{
     text-decoration: none;
+
+}
+
+.listaImagenes{
+    margin-right: 10px;
+    background-color:#0d33af40;
+    border: solid 3px #000000;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 2px 15px 0 black;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#botonTop10{
+    margin-left: 48%;
 }
 
 button {
     cursor: pointer;
 }
+
+ul {
+    margin: 0;
+    display: flex;
+    overflow-x: scroll;
+    list-style: none;
+}
+
+.scrollPelis{
+    text-align: center;
+}
 /**********Boton subir.***********************/
 
 #btn-subir{
-    margin-left: 75vh;
+    margin-left: 85%;
+    margin-bottom: 1px;
 }
 
 .bodyFondo{
-    background-repeat: no-repeat;
+    
     background: linear-gradient(to bottom, #9a99b9, #2b5876);
-    height:100vh;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 /*Todo*/
 *{

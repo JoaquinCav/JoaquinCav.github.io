@@ -14,19 +14,22 @@
     <link rel="stylesheet" href="BotonInicio.css">
     <link src="listaDeseos.html">
     <link src="contactUs.html">
+    <link src="comingSoon.html">
 </head>
 <body>
     <!--*****************Contenedor NavBar*****************-->
-    <nav class="navbar">
+    <nav class="navbar-principal">
         <p><a href="listaDeseos.html">My Wish list.</a></p>
         <p><a  href="contactUs.html">Contact Us.</a></p>
         <p><a  href="#precios">Our prices.</a></p>
+        <p><a href="comingSoon.html">Coming soon.</a></p>
     </nav>    
     <!--*****************Contenedor Primera Pagina*****************-->
     <div id="inicio" class="contenedor"> 
         <h1 class="titulo_inicio">Welcome</h1>
             <h2 class="sub_texto">Your new site to watch movies <br> from home.</h2>
             <button class="css-button-arrow--blue">Go!</button>
+            
     </div> 
     
     <!--*****************Segunda Pagina************************************-->
@@ -160,105 +163,14 @@
             </div>
         <br>
         <br>
-    
+    </div>
     <!--*****************Ver top 10*****************-->
     
-    <div class="contTop10">
-    <h2>Coming Soon!</h2>
-    <h4>(Click to watch trailer!)</h4>
-    <br>
-    <button id="botonTop10" onclick="top10();" >Take a look!</button>
-    <div id="contenedorTop10">
-        <ol class="listaOrdenada">
-            
-        <div class="listaImagenes">   <!--Puesto 1-->
-            <li id="peli1"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top1.jpg"/> 
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=0euQ6Dteids"><button class="btn-cSoon">View trailer here!</button></a>
-        </div>
-        
-        <div class="listaImagenes">   <!--Puesto 2-->
-            <li id="peli2"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top2.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=IO6kAXUvlOw"><button class="btn-cSoon">View trailer here!</button></a>
-        </div>
-            
-            <div class="listaImagenes">  <!--Puesto 3-->
-            <li id="peli3"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top3.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=ODbqWng2yFU"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-            
-            <div class="listaImagenes">  <!--Puesto 4-->
-            <li id="peli4"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top4.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=XOosUtGZo1Q"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-            
-            <div class="listaImagenes">  <!--Puesto 5-->
-            <li id="peli5"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top5.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=oV4EPoH23BY"><button class="btn-cSoon">View trailer here!</button></a> 
-            </div>
-            
-            <div class="listaImagenes">  <!--Puesto 6-->
-            <li id="peli6"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top6.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=-AwLMRgcEoA"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-        
-            <div class="listaImagenes">  <!--Puesto 7-->
-            <li id="peli7"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top7.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=05bJF54X5-0"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-            
-            <div class="listaImagenes">  <!--Puesto 8-->
-            <li id="peli8"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top8.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=YD5BeUWgsSM"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-            
-            <div class="listaImagenes">  <!--Puesto 9-->
-            <li id="peli9"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top9.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=PaAvUOXUohk"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-            
-            <div class="listaImagenes">  <!--Puesto 10-->
-            <li id="peli10"></li>
-            <br>
-            <img class="imgPeli" src="Imagenes/top10.jpg"/>
-            <br>
-            <a target="_blank" href="https://www.youtube.com/watch?v=-fR6GHlxBA8"><button class="btn-cSoon">View trailer here!</button></a>
-            </div>
-        </ol>
-        
-    </div>
-    </div>
-</div>
+    
 <br>
-<div>
-    <button id="btn-subir" onclick="scrollToTop();" >(Icono flecha para arriba)</button>
-</div>
+
+<button id="btn-subir" onclick="scrollToTop();" >(Icono flecha para arriba)</button>
+
 </div>
 
     <script src="subir.js" defer></script>

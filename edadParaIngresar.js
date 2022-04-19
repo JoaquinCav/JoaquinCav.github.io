@@ -1,4 +1,4 @@
-swal({
+/* swal({
     
     title: "Ingrese su nombre: ", 
     content: "input",
@@ -7,4 +7,5 @@ swal({
     })
     .then((value) => {
     swal(`Bienvenido/a ${value}! :D`,);
-    });
+        return 0;
+});

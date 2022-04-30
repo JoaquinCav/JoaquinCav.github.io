@@ -8,7 +8,10 @@ function eliminarDeMiLista1(pelicula){
     arrayMiLista.splice(indicePelicula,1);
     swal("", `You removed ${pelicula} from your wish list :C`,"error");
 
+    sessionStorage.removeItem ("WishList1");
+
     mostrarBoton1();
+    listaModal1.removeItem(`- El Padrino`);
 }
 
 function mostrarBoton1(){

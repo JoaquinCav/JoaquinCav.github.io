@@ -11,24 +11,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="botonesMiLista.css">
-    <link rel="stylesheet" href="BotonInicio.css">
+    <link rel="stylesheet" href="botonInicio.css">
     <link src="listaDeseos.html">
-    <link src="contactUs.html">
     <link src="comingSoon.html">
+    <script src="https://kit.fontawesome.com/f91836dc71.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f91836dc71.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="estiloModal.css">
+    
 </head>
 <body>
     <!--*****************Contenedor NavBar*****************-->
     <nav class="navbar-principal">
-        <p><a href="listaDeseos.html">My Wish list.</a></p>
-        <p><a  href="contactUs.html">Contact Us.</a></p>
-        <p><a  href="#precios">Our prices.</a></p>
-        <p><a href="comingSoon.html">Coming soon.</a></p>
+        <p class="underline"><a href="listaDeseos.html">My Wish list.</a></p>
+        <p class="underline"><a  href="#contact">Contact Us.</a></p>
+        <p class="underline"><a  href="#precios">Our prices.</a></p>
     </nav>    
     <!--*****************Contenedor Primera Pagina*****************-->
     <div id="inicio" class="contenedor"> 
         <h1 class="titulo_inicio">Welcome</h1>
             <h2 class="sub_texto">Your new site to watch movies <br> from home.</h2>
-            <button class="css-button-arrow--blue">Go!</button>
+            <a href="#titulo2"><button class="css-button-arrow--blue">Go!</button></a>
             
     </div> 
     
@@ -147,7 +150,7 @@
         </div>
         <br> 
         <br> 
-        <button id="botonMiLista" onclick="verLista()">Ver mi lista.</button>
+        
         <br> 
         <br> 
     
@@ -157,22 +160,147 @@
         <div class="contenedorDePrecios">
         <h2 id="precios"><span id="tituloCostos">Cost of our service. (Max. 6 screens.)</span></h2>
         <br>
-        <button id="botonPantallas" onclick="pantallas()" >Mostrar precios.</button>
+        <button id="botonPantallas" onclick="pantallas()" >Show prieces.</button>
             
                 
             </div>
         <br>
         <br>
     </div>
-    <!--*****************Ver top 10*****************-->
+    <!--*****************Coming Soon*****************-->
     
-    
-<br>
+    <div class="contTop10">
+        
+        <h2 class="scrollPelis">Coming Soon!</h2>
+        <br>
+        <button id="botonTop10" onclick="top10();" >Take a look!</button>
+        
+        <div id="contenedorTop10">
+            <ul class="listaOrdenada">
+                
+            <div class="listaImagenes">   <!--Puesto 1-->
+                <li id="peli1" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top1.jpg"/> 
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=0euQ6Dteids"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+            
+            <div class="listaImagenes">   <!--Puesto 2-->
+                <li id="peli2" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top2.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=IO6kAXUvlOw"><button class="btn-cSoon">View trailer here!</button></a>
+            </div>
+                
+                <div class="listaImagenes">  <!--Puesto 3-->
+                <li id="peli3" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top3.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=ODbqWng2yFU"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+                
+                <div class="listaImagenes">  <!--Puesto 4-->
+                <li id="peli4" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top4.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=XOosUtGZo1Q"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+                
+                <div class="listaImagenes">  <!--Puesto 5-->
+                <li id="peli5" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top5.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=oV4EPoH23BY"><button class="btn-cSoon">View trailer here!</button></a> 
+                </div>
+                
+                <div class="listaImagenes">  <!--Puesto 6-->
+                <li id="peli6" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top6.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=-AwLMRgcEoA"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+            
+                <div class="listaImagenes">  <!--Puesto 7-->
+                <li id="peli7" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top7.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=05bJF54X5-0"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+                
+                <div class="listaImagenes">  <!--Puesto 8-->
+                <li id="peli8" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top8.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=YD5BeUWgsSM"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+                
+                <div class="listaImagenes">  <!--Puesto 9-->
+                <li id="peli9" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top9.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=PaAvUOXUohk"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+                
+                <div class="listaImagenes">  <!--Puesto 10-->
+                <li id="peli10" class="scrollPelis"></li>
+                <br>
+                <img class="imgPeli" src="Imagenes/top10.jpg"/>
+                <br>
+                <a target="_blank" href="https://www.youtube.com/watch?v=-fR6GHlxBA8"><button class="btn-cSoon">View trailer here!</button></a>
+                </div>
+            </ul>
+            
+        </div>
+        </div>
 
-<button id="btn-subir" onclick="scrollToTop();" >(Icono flecha para arriba)</button>
+    <!--*****************Ver top 10*****************-->
+<br>
+<div id="contact" class="contact">
+    <h2 class="titulo-contact">Send us a message!</h2>
+    <div class="icons-wrapper">
+        <i class="ri-instagram-line icon"></i>
+        <i class="ri-facebook-circle-line icon"></i>
+        <i class="ri-whatsapp-line icon"></i>
+    </div>
+</div>    
+
+
+<br>
+<br>
+<Br>
+    <Br>
+
+        <button id="open" class="btn-modal">
+            Hacer Click
+        </button>
+        
+        <div id="modal_container" class="modal-container">
+            <div class="modal">
+            <h1>Literally, your wish-"list"</h1>
+            <ul id="list-modal">
+
+            </ul>
+            <button id="close">Cerrar</button>
+            </div>
+        </div>
+
+
+<button id="btn-subir" onclick="scrollToTop();" ><i onclick="scrollToTop();" class="fa-solid fa-arrow-up-long"></i></button>
 
 </div>
-
+    
+    <script src="javascriptModal.js" defer></script>
+    <script src="checkBotonMiLista.js" defer></script>
+    <script src="funcionRecarga.js" defer></script>
     <script src="subir.js" defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="top10.js" defer></script>

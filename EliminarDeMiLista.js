@@ -11,7 +11,7 @@ function eliminarDeMiLista1(pelicula){
     sessionStorage.removeItem ("WishList1");
 
     mostrarBoton1();
-    listaModal1.removeItem(`- El Padrino`);
+    listaModal1.removeItem();
 }
 
 function mostrarBoton1(){

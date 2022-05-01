@@ -5,6 +5,8 @@ const arrayMiLista = [];
 const listaModal = document.getElementById(`list-modal`);
 
 
+
+
 function agregarAMiListaPeli1(pelicula){  //Pelicula 1
 
     swal("","You added " + pelicula + " to your wish list","success");
@@ -45,12 +47,12 @@ function agregarAMiListaPeli2(pelicula){
     sessionStorage.setItem ("WishList2", JSON.stringify('batman'));
     
     mostrarBoton2();
-    arrayMiLista.push(JSON.parse(sessionStorage.getItem("WishList2")));
-
     
-    const itemDelModal2 = document.createElement(`li`);
-    itemDelModal2.textContent = `- Batman`;
-    listaModal2.appendChild(itemDelModal2);
+
+    const listaModal1 = document.getElementById(`list-modal`);
+    const itemDelModal1 = document.createElement(`li`);
+    itemDelModal1.textContent = `- Batman`;
+    listaModal1.appendChild(itemDelModal1);
 }
 
 

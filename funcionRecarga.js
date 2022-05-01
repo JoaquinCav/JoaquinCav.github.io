@@ -1,5 +1,0 @@
-function validarMiLista(){
-
-    respuestaLoad1();
-
-}

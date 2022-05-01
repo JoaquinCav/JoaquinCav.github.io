@@ -23,7 +23,6 @@
 <body>
     <!--*****************Contenedor NavBar*****************-->
     <nav class="navbar-principal">
-        <p class="underline"><a href="listaDeseos.html">My Wish list.</a></p>
         <p class="underline"><a  href="#contact">Contact Us.</a></p>
         <p class="underline"><a  href="#precios">Our prices.</a></p>
     </nav>    
@@ -150,7 +149,19 @@
         </div>
         <br> 
         <br> 
+        <button id="open" class="btn-modal">
+            Hacer Click
+        </button>
         
+        <div id="modal_container" class="modal-container">
+            <div class="modal">
+            <h1>Literally, your wish-"list"</h1>
+            <ul id="list-modal">
+            
+            </ul>
+            <button id="close">Cerrar</button>
+            </div>
+        </div>
         <br> 
         <br> 
     
@@ -274,33 +285,11 @@
 </div>    
 
 
-<br>
-<br>
-<Br>
-    <Br>
-
-        <button id="open" class="btn-modal">
-            Hacer Click
-        </button>
-        
-        <div id="modal_container" class="modal-container">
-            <div class="modal">
-            <h1>Literally, your wish-"list"</h1>
-            <ul id="list-modal">
-
-            </ul>
-            <button id="close">Cerrar</button>
-            </div>
-        </div>
-
-
 <button id="btn-subir" onclick="scrollToTop();" ><i onclick="scrollToTop();" class="fa-solid fa-arrow-up-long"></i></button>
 
 </div>
     
     <script src="javascriptModal.js" defer></script>
-    <script src="checkBotonMiLista.js" defer></script>
-    <script src="funcionRecarga.js" defer></script>
     <script src="subir.js" defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="top10.js" defer></script>

@@ -1,11 +1,11 @@
-/* swal({
+swal({
     
-    title: "Ingrese su nombre: ", 
+    title: "Type your name: ", 
     content: "input",
     
 
     })
     .then((value) => {
-    swal(`Bienvenido/a ${value}! :D`,);
+    swal(`Welcome ${value}! :D`,);
         return 0;
 });

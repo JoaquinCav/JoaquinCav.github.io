@@ -252,7 +252,35 @@ span{
 }
 
 #botonTop10{
-    margin-left: 48%;
+    margin-left: 47%;
+    color: white;
+    padding: 8px;
+    width: 120px;
+    background-color: #0d33af;
+    border: solid 2px #000000;
+    border-radius: 15px;
+    
+
+}
+
+#botonPantallas{
+    margin-left: 180px;
+    color: white;
+    padding: 8px;
+    width: 120px;
+    background-color: #0d33af;
+    border: solid 2px #000000;
+    border-radius: 15px;
+}
+
+.btn-modal{
+    margin-left: 47vw;
+    color: white;
+    padding: 8px;
+    width: 120px;
+    background-color: #0d33af;
+    border: solid 2px #000000;
+    border-radius: 15px;
 }
 
 button {

@@ -20,17 +20,18 @@
     <link rel="stylesheet" href="estiloModal.css">
     
 </head>
-<body>
+<body onload="funcionInterval();">
     <!--*****************Contenedor NavBar*****************-->
     <nav class="navbar-principal">
         <p class="underline"><a  href="#contact">Contact Us.</a></p>
         <p class="underline"><a  href="#precios">Our prices.</a></p>
+        <p class="underline"><a  href="#open">Wish list.</a></p>
     </nav>    
     <!--*****************Contenedor Primera Pagina*****************-->
     <div id="inicio" class="contenedor"> 
         <h1 class="titulo_inicio">Welcome</h1>
             <h2 class="sub_texto">Your new site to watch movies <br> from home.</h2>
-            <a href="#titulo2"><button class="css-button-arrow--blue">Go!</button></a>
+            <a href="#titulo2"><button class="css-button-arrow--blue" >Go!</button></a>
             
     </div> 
     
@@ -42,23 +43,23 @@
         <div id="galeriaPelis" >
             <div class="card-pelicula"> 
                 <div>
-                    <img src="imagenes/pelicula1.jpg" class="nuestras-pelis" ></img>
+                    <img src="imagenes/pelicula1.jpg" class="nuestras-pelis" alt="El padrino" ></img>
                 </div>
                 <div class="botonClass">    
                     <button class="pepe btn-agr1" onclick="agregarAMiListaPeli1('El padrino')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe btn-elim1" onclick="eliminarDeMiLista1(`El padrino`)">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim1" onclick="eliminarDeMiLista('El padrino','pel-1','.btn-agr1','.btn-elim1')">- Remove from my list.</button>
                 </div>        
             </div>    
                     
             <div class="card-pelicula">        
                 <div >    
-                    <img src="imagenes/imagen2.jpg" class="nuestras-pelis"></img>
+                    <img src="imagenes/imagen2.jpg" class="nuestras-pelis" alt="Batman" ></img>
                 </div>
                 <div class="botonClass">    
                         <button class="pepe btn-agr2" onclick="agregarAMiListaPeli2(`Batman: El caballero oscuro`)">+Add to Wish list.</button>
                         <br>
-                        <button class="pepe btn-elim2" onclick="eliminarDeMiLista2(`Batman: El caballero oscuro`)">- Eliminar de mi lista.</button> 
+                        <button class="pepe btn-elim2" onclick="eliminarDeMiLista('Batman: El caballero oscuro','pel-2','.btn-agr2', '.btn-elim2')">- Remove from my list.</button> 
                 </div>    
                     </div>        
                     
@@ -69,7 +70,7 @@
                 <div class="botonClass">        
                         <button class="pepe btn-agr3" onclick="agregarAMiListaPeli3('El señor de los anillos')" >+Add to Wish list.</button>
                         <br> 
-                        <button class="pepe btn-elim3" onclick="eliminarDeMiLista3(`El señor de los anillos`)">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim3" onclick="eliminarDeMiLista(`El señor de los anillos`,'.btn-agr3','.btn-elim3')">- Remove from my list.</button>
                 </div>    
             </div>    
 
@@ -80,7 +81,7 @@
                 <div class="botonClass">        
                         <button class="pepe btn-agr4" onclick="agregarAMiListaPeli4('La milla verda')" >+Add to Wish list.</button>
                         <br>
-                        <button class="pepe btn-elim4" onclick="eliminarDeMiLista4('La milla verda')">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim4" onclick="eliminarDeMiLista('La milla verda','pel-4','.btn-agr4','.btn-elim4')">- Remove from my list.</button>
                 </div>    
             </div>
             <div class="card-pelicula">         
@@ -90,7 +91,7 @@
                 <div class="botonClass">    
                     <button class="pepe btn-agr5" onclick="agregarAMiListaPeli5('Forrest gump')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe btn-elim5" onclick="eliminarDeMiLista5('Forrest gump')">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim5" onclick="eliminarDeMiLista('Forrest gump','pel-5','.btn-agr5','.btn-elim5')">- Remove from my list.</button>
                 </div>    
             </div>
             <div class="card-pelicula"> 
@@ -100,7 +101,7 @@
                 <div class="botonClass">    
                     <button class="pepe btn-agr6" onclick="agregarAMiListaPeli6('Conan: El Barbaro')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe btn-elim6" onclick="eliminarDeMiLista6(`Conan: El Barbaro`)">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim6" onclick="eliminarDeMiLista(`Conan: El Barbaro`,'pel-6','.btn-agr6','.btn-elim6')">- Remove from my list.</button>
                 </div>        
             </div>    
                     
@@ -111,7 +112,7 @@
                 <div class="botonClass">    
                         <button class="pepe btn-agr7" onclick="agregarAMiListaPeli7(`Revancha`)">+Add to Wish list.</button>
                         <br>
-                        <button class="pepe btn-elim7" onclick="eliminarDeMiLista7(`Revancha`)">- Eliminar de mi lista.</button> 
+                        <button class="pepe btn-elim7" onclick="eliminarDeMiLista(`Revancha`,'pel-7','.btn-agr7','.btn-elim7')">- Remove from my list.</button> 
                 </div>    
                     </div>        
                     
@@ -122,7 +123,7 @@
                 <div class="botonClass">        
                         <button class="pepe btn-agr8" onclick="agregarAMiListaPeli8('Scre4m')" >+Add to Wish list.</button>
                         <br> 
-                        <button class="pepe btn-elim8" onclick="eliminarDeMiLista8(`Scre4m`)">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim8" onclick="eliminarDeMiLista(`Scre4m`,'pel-8','.btn-agr8','.btn-elim8')">- Remove from my list.</button>
                 </div>    
             </div>    
 
@@ -133,7 +134,7 @@
                 <div class="botonClass">        
                         <button class="pepe btn-agr9" onclick="agregarAMiListaPeli9('Spider-man: No way home')" >+Add to Wish list.</button>
                         <br>
-                        <button class="pepe btn-elim9" onclick="eliminarDeMiLista9('Spider-man: No way home')">- Eliminar de mi lista.</button>
+                        <button class="pepe btn-elim9" onclick="eliminarDeMiLista('Spider-man: No way home','pel-9','.btn-agr9','.btn-elim9')">- Remove from my list.</button>
                 </div>    
             </div>
             <div class="card-pelicula">         
@@ -143,14 +144,14 @@
                 <div class="botonClass">    
                     <button class="pepe btn-agr10" onclick="agregarAMiListaPeli10('Sonic 2')" >+Add to Wish list.</button>
                     <br>
-                    <button class="pepe btn-elim10" onclick="eliminarDeMiLista10('Sonic 2')">- Eliminar de mi lista.</button>
+                    <button class="pepe btn-elim10" onclick="eliminarDeMiLista('Sonic 2','pel-10','.btn-agr10','.btn-elim10')">- Remove from my list.</button>
                 </div>    
             </div>
         </div>
         <br> 
         <br> 
         <button id="open" class="btn-modal">
-            Hacer Click
+            View List!
         </button>
         
         <div id="modal_container" class="modal-container">
@@ -159,12 +160,11 @@
             <ul id="list-modal">
             
             </ul>
-            <button id="close">Cerrar</button>
+            <button id="close">close</button>
             </div>
         </div>
         <br> 
         <br> 
-    
     <!--*****************Tercera pagina*****************-->
     
     <div>
@@ -278,9 +278,9 @@
 <div id="contact" class="contact">
     <h2 class="titulo-contact">Send us a message!</h2>
     <div class="icons-wrapper">
-        <i class="ri-instagram-line icon"></i>
-        <i class="ri-facebook-circle-line icon"></i>
-        <i class="ri-whatsapp-line icon"></i>
+        <a href="https://www.instagram.com/joaquin_cavanna/?hl=es-la" target="_blank"><i class="ri-instagram-line icon"></i></a>
+        <a href="https://www.facebook.com/joaquin.cavanna.3" target="_blank"><i class="ri-facebook-circle-line icon"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=543425674590" target="_blank"><i class="ri-whatsapp-line icon"></i></a>
     </div>
 </div>    
 
@@ -288,7 +288,7 @@
 <button id="btn-subir" onclick="scrollToTop();" ><i onclick="scrollToTop();" class="fa-solid fa-arrow-up-long"></i></button>
 
 </div>
-    
+    <script src="setInterval.js"></script>
     <script src="javascriptModal.js" defer></script>
     <script src="subir.js" defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

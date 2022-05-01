@@ -4,9 +4,6 @@ const arrayMiLista = [];
 
 const listaModal = document.getElementById(`list-modal`);
 
-
-
-
 function agregarAMiListaPeli1(pelicula){  //Pelicula 1
 
     swal("","You added " + pelicula + " to your wish list","success");
@@ -25,6 +22,9 @@ function agregarAMiListaPeli1(pelicula){  //Pelicula 1
     itemDelModal1.textContent = `- El Padrino`;
     listaModal.appendChild(itemDelModal1);
     
+    itemDelModal1.setAttribute("id","pel-1");
+
+    console.log(itemDelModal1.id)
 }
     
 
@@ -53,6 +53,10 @@ function agregarAMiListaPeli2(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- Batman`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-2");
+
+    console.log(itemDelModal1.id)
 }
 
 
@@ -78,6 +82,8 @@ function agregarAMiListaPeli3(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- El señor de los anillos`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-3");
 }
 arrayMiLista.push(JSON.parse(sessionStorage.getItem("WishList3")));
 
@@ -103,6 +109,8 @@ function agregarAMiListaPeli4(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- La milla verde`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-4");
     
 }
 arrayMiLista.push(JSON.parse(sessionStorage.getItem("WishList4")));
@@ -129,6 +137,8 @@ function agregarAMiListaPeli5(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- Forrest Gun`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-5");
     
 }
 arrayMiLista.push(JSON.parse(sessionStorage.getItem("WishList5")));
@@ -159,6 +169,8 @@ function agregarAMiListaPeli6(pelicula){
     itemDelModal1.textContent = `- Conan`;
     listaModal1.appendChild(itemDelModal1);
     
+
+    itemDelModal1.setAttribute("id","pel-6");
     
 }
 
@@ -186,6 +198,8 @@ function agregarAMiListaPeli7(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- Revancha`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-7");
     
 }
 
@@ -213,6 +227,8 @@ function agregarAMiListaPeli8(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- Scre4m`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-8");
     
 }
 
@@ -241,6 +257,8 @@ function agregarAMiListaPeli9(pelicula){
     itemDelModal1.textContent = `- Spider-Man`;
     listaModal1.appendChild(itemDelModal1);
     
+
+    itemDelModal1.setAttribute("id","pel-9");
 }
 
 function mostrarBoton9 () {
@@ -267,6 +285,8 @@ function agregarAMiListaPeli10(pelicula){
     const itemDelModal1 = document.createElement(`li`);
     itemDelModal1.textContent = `- Sonic 2`;
     listaModal1.appendChild(itemDelModal1);
+
+    itemDelModal1.setAttribute("id","pel-10");
     
 }
 
